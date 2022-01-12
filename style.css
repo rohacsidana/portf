@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@700&family=Zen+Tokyo+Zoo&display=swap");
+body {
+  background-color: #dde5b6;
+}
+main {
+  max-width: 950px;
+  margin: auto;
+  display: grid;
+  grid-template-areas:
+    "h h h h h h"
+    "n n n n n n"
+    "a a a a a a"
+    "f f f f f f";
+  background-color: #adc178;
+  border-radius: 20px;
+}
+header,
+nav,
+article,
+footer {
+  padding: 20px;
+  border: #f0ead2 solid 3px;
+  margin: 15px;
+  border-radius: 20px;
+}
+
+header {
+  grid-area: h;
+  letter-spacing: 5px;
+  font-family: "Zen Tokyo Zoo", cursive;
+  text-align: center;
+  background-color: #a98467;
+}
+header a {
+  text-decoration: none;
+  color: #f0ead2;
+  font-size: 30pt;
+}
+nav {
+  grid-area: n;
+  font-family: "Sulphur Point", sans-serif;
+  background-color: #f0ead2;
+}
+nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+  margin: 0;
+}
+nav li {
+  list-style-type: none;
+  text-align: center;
+}
+nav li a {
+  text-decoration: none;
+  color: #6c584c;
+}
+nav li a:hover {
+  background-color: #6c584c;
+  padding: 22px;
+  color: #dde5b6;
+}
+article {
+  grid-area: a;
+  background-color: #f0ead2;
+}
+footer {
+  grid-area: f;
+  color: #dde5b6;
+  background-color: #a98467;
+  text-align: center;
+  font-family: "Sulphur Point", sans-serif;
+}
+p {
+  color: #6c584c;
+  font-family: "Sulphur Point", sans-serif;
+  padding: 5px;
+}
+h1 {
+  color: #dde5b6;
+}
+article h1 {
+  font-family: "Sulphur Point", sans-serif;
+  color: #6c584c;
+  font-size: 30px;
+}
+h2 {
+  color: #6c584c;
+  font-family: "Sulphur Point", sans-serif;
+}
+#java,
+#python {
+  filter: grayscale(100%);
+}
+.fbinsta {
+  max-width: 100px;
+}
+
+#kapcsolat {
+  text-align: center;
+}
+div h1 {
+  text-align: center;
+}
+.tftable {
+  font-size: 12px;
+  color: #333333;
+  width: 100%;
+  border-width: 1px;
+  border-color: #bcaf91;
+  border-collapse: collapse;
+  font-family: "Sulphur Point", sans-serif;
+}
+.tftable th {
+  font-size: 12px;
+  background-color: #ded0b0;
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #bcaf91;
+  text-align: left;
+}
+.tftable tr {
+  background-color: #ffffff;
+}
+.tftable td {
+  font-size: 12px;
+  border-width: 1px;
+  padding: 8px;
+  
+  border-style: solid;
+  border-color: #bcaf91;
+}
+.tftable tr:hover {
+  background-color: #6c584c;
+  color:#dde5b6;
+}
+div a {
+  text-decoration: none;
+}
+#web {
+  text-align: center;
+}
+#web img {
+  padding: 10px;
+  border-radius: 30px;
+}
+#web a:hover {
+  filter: grayscale(100%);
+}
+#python {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+}
+#java {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+#danakep {
+  max-width: 200px;
+  float: right;
+  padding: 15px;
+  margin: 10px;
+  -webkit-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.41);
+  -moz-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.41);
+  box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.41);
+}
+@media screen and (max-width: 600px) {
+  article {
+    display: grid;
+    grid-template-areas:
+      "h1"
+      "h2"
+      "p"
+      "img";
+  }
+
+  h1 {
+    grid-area: h1;
+  }
+  nav ul {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  h2 {
+    grid-area: h2;
+  }
+  p {
+    grid-area: p;
+  }
+
+  #danakep {
+    grid-area: img;
+  }
+  #munkarticle {
+    display: grid;
+    grid-template-areas:
+      "h11"
+      "w"
+      "h12"
+      "py"
+      "h13"
+      "ja";
+  }
+  #elsoh1 {
+    grid-area: h11;
+  }
+  #mash1 {
+    grid-area: h12;
+  }
+  #harh1 {
+    grid-area: h13;
+  }
+  #java {
+    grid-area: ja;
+  }
+  #web {
+    grid-area: w;
+    display: grid;
+    grid-auto-rows: 1fr 1fr 1fr 1fr 1fr;
+  }
+  #python {
+    grid-area: py;
+    display: grid;
+    grid-auto-rows: 1fr 1fr 1fr;
+  }
+}
